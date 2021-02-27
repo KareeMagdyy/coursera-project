@@ -1,0 +1,36 @@
+{
+  "name": "coursera-project",
+  "version": "1.0.0",
+  "description": "Coursera FrontEnd Project",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run watch:all",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server",
+    "scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KareeMagdyy/coursera-project.git"
+  },
+  "author": "Kareem Magdy El-Zomor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KareeMagdyy/coursera-project/issues"
+  },
+  "homepage": "https://github.com/KareeMagdyy/coursera-project#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "parallelshell": "^3.0.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "node-sass": "^5.0.0",
+    "onchange": "^7.1.0",
+    "popper.js": "^1.12.9"
+  }
+}
